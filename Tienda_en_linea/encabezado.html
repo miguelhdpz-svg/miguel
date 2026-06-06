@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Chamarras Personalizadas
+</title>
+
+<link rel="stylesheet"
+href="estilos/tienda.css">
+
+<script>
+
+function confirmarSalida()
+{
+    var salir = confirm(
+        '¿Deseas cerrar sesión?'
+    );
+
+    if(salir)
+    {
+        location.href='logout.php';
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="encabezado">
+
+    <div class="contenedorIcon">
+
+        <div class="icon">
+            🧥
+        </div>
+
+    </div>
+
+    <h1>
+        Chamarras Personalizadas
+    </h1>
+
+    <?php
+
+    if(
+        isset($_SESSION["ID"]) &&
+        $_SESSION["STATUS"] == "ACTIVA"
+    )
+    {
+
+        /* ====================================
+           EMPLEADO
+        ==================================== */
+
+        if($_SESSION["ROL"] == 0)
+        {
+        ?>
+
+        <div class="usuario">
+
+            <p id="usuario">
+
+                Empleado:
+                <b>
+                <?php
+                echo $_SESSION["USUARIO"];
+                ?>
+                </b>
+
+            </p>
+
+        </div>
+
+        <div class="nav">
+
+            <ul>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=perfil'">
+
+                    Perfil
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=tienda'">
+
+                    Chamarras
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=pedidos/listar'">
+
+                    Pedidos
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <?php
+
+        }
+
+        /* ====================================
+           ADMINISTRADOR
+        ==================================== */
+
+        elseif($_SESSION["ROL"] == 1)
+        {
+        ?>
+
+        <div class="usuario">
+
+            <p id="usuario">
+
+                Administrador:
+                <b>
+                <?php
+                echo $_SESSION["USUARIO"];
+                ?>
+                </b>
+
+            </p>
+
+        </div>
+
+        <div class="nav-admin">
+
+            <ul>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=tienda'">
+
+                    Chamarras
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=clientes/listar'">
+
+                    Clientes
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=pedidos/listar'">
+
+                    Pedidos
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=chamarras/listar'">
+
+                    Inventario
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=reportes'">
+
+                    Reportes
+
+                </li>
+
+                <li onclick="
+                location.href=
+                'index.php?pagina=tuneos'">
+
+                    Tuneos
+
+                </li>
+
+                <li onclick="
+                confirmarSalida()">
+
+                    Salir
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <?php
+        }
+    }
+    ?>
+
+</div>
+
+</body>
+
+</html>

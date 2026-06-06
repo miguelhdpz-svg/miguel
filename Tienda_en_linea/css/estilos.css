@@ -1,0 +1,448 @@
+
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+body{
+
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+	margin:0;
+	padding:0;
+	background:#f5f5f5;
+	text-align:center;
+	font-size:14px;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado{
+
+	padding-top:2%;
+	padding-bottom:2%;
+	background:#1E1E1E;
+	color:white;
+
+	box-shadow:0px 4px 10px rgba(0,0,0,0.5);
+}
+
+/* =========================================
+   ICONO
+========================================= */
+
+.contenedorIcon{
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:10px;
+}
+
+.icon{
+
+	border-radius:50%;
+
+	width:70px;
+	height:70px;
+
+	line-height:70px;
+
+	background:#70c26f;
+	color:white;
+
+	font-size:3.0rem;
+
+	transition:0.3s;
+}
+
+.icon:hover{
+
+	background:#4ea84d;
+	color:#fff;
+	transform:scale(1.05);
+}
+
+/* =========================================
+   USUARIO
+========================================= */
+
+.usuario{
+
+	font-size:1.2rem;
+	margin-bottom:10px;
+}
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.nav,
+.nav-admin{
+
+	width:100%;
+}
+
+ul{
+
+	padding:0;
+	margin:0;
+	width:100%;
+}
+
+li{
+
+	list-style-type:none;
+
+	float:left;
+
+	padding-top:12px;
+	padding-bottom:12px;
+
+	background:#2f2f2f;
+	color:white;
+
+	cursor:pointer;
+
+	box-shadow:0px 0px 4px rgba(0,0,0,0.5);
+
+	transition:0.3s;
+}
+
+/* MENÚ EMPLEADO */
+
+.nav li{
+
+	width:33.33%;
+	font-size:1.2rem;
+}
+
+/* MENÚ ADMIN */
+
+.nav-admin li{
+
+	width:14.28%;
+	font-size:1.0rem;
+}
+
+li:hover{
+
+	background:#70c26f;
+	color:white;
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.contenido{
+
+	width:100%;
+
+	margin-top:5%;
+
+	text-align:center;
+
+	font-size:1.2rem;
+}
+/* =========================================
+   SOLO TIENDA
+========================================= */
+
+.contenedor-tienda{
+
+	width:100%;
+
+	display:flex;
+
+	flex-direction:column;
+
+	align-items:center;
+}
+
+.tarjeta-chamarra{
+
+	width:80%;
+
+	background:white;
+
+	padding:20px;
+
+	margin:15px auto;
+
+	border-radius:10px;
+
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
+	display:flex;
+
+	align-items:center;
+
+	justify-content:center;
+
+	gap:30px;
+}
+
+.imagen-chamarra img{
+
+	width:220px;
+
+	border-radius:10px;
+}
+
+.info-chamarra{
+
+	text-align:left;
+}
+
+.boton-comprar{
+
+	background:#27ae60;
+
+	color:white;
+
+	padding:10px 20px;
+
+	text-decoration:none;
+
+	border-radius:5px;
+
+	display:inline-block;
+
+	margin-top:10px;
+}
+
+.boton-comprar:hover{
+
+	background:#219150;
+}
+/* =========================================
+   TÍTULOS
+========================================= */
+
+#titulo_de_pagina{
+
+	padding-top:2%;
+	font-size:2.0rem;
+	color:#222;
+}
+
+#aviso{
+
+	color:blue;
+	font-size:1rem;
+}
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+
+form{
+
+	width:60%;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+select,
+textarea{
+
+	width:100%;
+
+	height:35px;
+
+	border:none;
+
+	border-radius:5px;
+
+	background:#C2F98E;
+
+	margin-bottom:15px;
+
+	text-align:center;
+
+	font-size:1rem;
+
+	color:#222;
+
+	padding:5px;
+}
+
+textarea{
+
+	height:80px;
+	resize:none;
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+
+	background:#D8F9B6;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+input[type="submit"]{
+
+	background:#70c26f;
+	color:white;
+	font-weight:bold;
+
+	cursor:pointer;
+
+	transition:0.3s;
+}
+
+input[type="submit"]:hover{
+
+	background:#4ea84d;
+}
+
+/* =========================================
+   TABLAS
+========================================= */
+
+table{
+
+	width:90%;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	border-collapse:collapse;
+
+	background:white;
+
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   FILAS Y COLUMNAS
+========================================= */
+
+th{
+
+	background:#1E1E1E;
+	color:white;
+
+	padding:12px;
+}
+
+td{
+
+	padding:10px;
+
+	border:1px solid #ddd;
+}
+
+/* =========================================
+   IMÁGENES
+========================================= */
+
+img{
+
+	border-radius:10px;
+}
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
+
+.agregar{
+
+	text-decoration:none;
+
+	border-radius:50%;
+
+	padding-left:18px;
+	padding-right:18px;
+
+	padding-top:5px;
+	padding-bottom:5px;
+
+	background:#70c26f;
+
+	color:white;
+
+	font-size:2rem;
+}
+
+.agregar:hover{
+
+	background:#4ea84d;
+}
+
+/* =========================================
+   CARRITO / CANASTA
+========================================= */
+
+#botonDeCanasta{
+
+	display:none;
+}
+
+#botonDeCanasta + label{
+
+	font-size:3rem;
+	cursor:pointer;
+}
+
+#canasta{
+
+	text-align:center;
+
+	z-index:3;
+
+	position:fixed;
+
+	bottom:20%;
+
+	left:10%;
+	right:10%;
+
+	height:auto;
+
+	padding:20px;
+
+	visibility:hidden;
+
+	background:#ffffff;
+
+	border-radius:10px;
+
+	box-shadow:0px 0px 15px rgba(0,0,0,0.4);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+	li{
+
+		width:100% !important;
+		float:none;
+	}
+
+	form{
+
+		width:90%;
+	}
+
+	table{
+
+		font-size:12px;
+	}
+}
+

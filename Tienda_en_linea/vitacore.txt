@@ -1,0 +1,3 @@
+alas 10am se me corrompio el proyecto como solucion movi archivos a otro proyecto que si agarraba mejor por ahora 
+solo me muestra el historial de chamarras aun falta que agarre para editar los pedidos y que funcione el diseño
+pero ya tiene la conexion en el mysql
